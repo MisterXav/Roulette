@@ -4,8 +4,8 @@ function getRandomInt(max) {
   let number
   let tableau = [11,22,33,44,55,66,77,88,99]
   let nombre_alétoire
-  let h1 = document.querySelector('h1')
-  let h2 = document.querySelector('h2')
+  let h1 = document.querySelector('#numeros_aleatoire')
+  let h2 = document.querySelector('#gagner')
   let button = document.querySelector("#generator")
 
 
