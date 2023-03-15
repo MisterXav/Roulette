@@ -1,12 +1,23 @@
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
-
-  let tableau = [42, 65, 37, 75]
+  let number
+  let tableau = [11,22,33,44,55,66,77,88,99]
   let nombre_alétoire
-  console.log(getRandomInt(3));
-  // Expected output: 0, 1 or 2
-  
   let h1 = document.querySelector('h1')
-  console.log(h1)
-  h1.innerText = getRandomInt(20)
+  let h2 = document.querySelector('h2')
+  let button = document.querySelector("#generator")
+
+
+  button.addEventListener('click', event => {
+    number=getRandomInt(100)
+    h1.innerText = number
+    tableau.forEach(element => {
+        if(element == number){
+            console.log("gagné")
+            h2.innerText = "Vous avez gagné"
+        }
+      });
+  });
+
+  
