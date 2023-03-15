@@ -1,0 +1,27 @@
+Alors...
+
+
+JS :
+4 nombres a définir au début du script
+
+[ 42, 65, 37, 75]
+-> 42 -> bravo !
+Prochain 42 -> perdu :'( je pleure très fort
+
+Fonction qui génère un nombre random
+
+Fonction qui vérifie si tu tombe sur un numéro gagnant
+
+Fonction qui invalide un numéro gagnant quand il sort
+
+HTML : 
+
+- Header : Logo de proméo et titre au centre
+- body : Slot et bouton "launch" relié a la fonction JS
+
+CSS :
+
+- Style du Header
+- Style global de la page
+- Style du bouton
+- Animation du défilement des chiffres | Possible en JS
