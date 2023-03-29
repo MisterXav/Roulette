@@ -25,3 +25,11 @@ CSS :
 - Style global de la page
 - Style du bouton
 - Animation du défilement des chiffres | Possible en JS
+
+Nico :
+
+Centrer le texte dans le Header
+Centrer la "roulette" dans la page
+Styliser le bouton
+Styliser le texte de gagner ou pas gagner
+Styliser un texte qui présente la roulette 
