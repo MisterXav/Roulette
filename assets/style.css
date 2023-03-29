@@ -21,11 +21,11 @@ h2 {
 }
 
 #generator {
-    border: #161a1f solid;
+    border: #afb4b9 solid;
     width: 200px;
     height: 50px;
     border-radius: 15px;
-    background-color: #afb4b9;
+    background-color: #FFF;
     
 }
 
@@ -48,5 +48,5 @@ h2 {
     display: block;
 }
 .random-resolved {
-    color: blue
+    color: #000
 }

@@ -16,22 +16,16 @@ function getRandomInt(max) {
 
 
   button2.addEventListener('click', event => {
-    h2.innerText = ""
-    number=getRandomInt(100)
-    h1.innerText = number
-    tableau.forEach(element => {
-        if(element == number){
-            console.log("gagné")
-            h2.innerText = "Vous avez gagné"
-        }
-        else {
-          h2.innerText = "Vous avez perdu"
-        }
-      });
-      setTimeout(clearH2, 5000);
+    clearH2()
+    if(!button_press)
+    {
+      button_press = true;
+      document.querySelector('#numeros_aleatoire').textContent="";
+      prependRandomNumbersTo(".very-slow")(5, 1000, 1200).then((n) => azeaze(n) );
+    }
   });
 
-
+console.log("test", this.n)
 
   // TESTING ZONE
 
@@ -136,7 +130,8 @@ function shouldStop() {
   return stop;
 }
 function resetAll() {
-  stop = true;
+  stop = false;
+  document.querySelector('#numeros_aleatoire').textContent="";
   let numbers = [...document.querySelectorAll(".number")];
   numbers.forEach((number) => {
     number.textContent = "";
@@ -149,12 +144,30 @@ function resetAll() {
 
 function main() {
   stop = false;
-  prependRandomNumbersTo(".very-slow")(5, 1000, 1200).then((n) =>
-    console.log(`resolved (very slow):`, n)
-  );
+  
+}
+
+function azeaze(number_alea)
+{
+  h2.innerText = ""
+    number=number_alea;
+    h1.innerText = number
+    tableau.forEach(element => {
+        if(element == number){
+            console.log("gagné")
+            h2.innerText = "Vous avez gagné"
+        }
+        else {
+          h2.innerText = "Vous avez perdu"
+        }
+      });
+      
+
+      button_press = false;
 }
 
 let stop = false;
+let button_press= false;
 const button = document.querySelector(".button");
 button.addEventListener("click", resetAll);
 
