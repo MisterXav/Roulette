@@ -10,6 +10,7 @@ function getRandomInt(max) {
 
 
   button.addEventListener('click', event => {
+    h2.innerText = ""
     number=getRandomInt(100)
     h1.innerText = number
     tableau.forEach(element => {
