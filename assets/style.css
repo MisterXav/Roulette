@@ -19,3 +19,34 @@ h2 {
 #generator {
     border: #F8F9FA;
 }
+
+
+
+  
+  .button {
+    display: block;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 10px auto 0 auto;
+    border: 1px snow dashed;
+    border-radius: 5px;
+    color: snow;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .number {
+    display: block;
+  }
+  
+  .random-resolved {
+    color: blue
+  }
+  
+  @media (min-width: 768px) {
+    p {
+      font-size: 32px;
+    }
+  }
+  
